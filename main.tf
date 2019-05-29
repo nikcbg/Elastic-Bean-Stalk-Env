@@ -1,5 +1,5 @@
 #provider "aws" {
- region = "us-east-1"
+ #region = "us-east-1"
  # access_key = "AWS_ACCESSKEY"
  # secret_key = "AWS_SECRETCODE"
 #}
@@ -8,6 +8,7 @@
 locals {
   app_name = "rbd-metadata-ingest"
   env_name = "staging"
+  region = "us-east-1"
 
   #reuse existing sg + vpc
   eb_subnet = "subnet-a7950aef" #UMG_DDS_STG_Private1
