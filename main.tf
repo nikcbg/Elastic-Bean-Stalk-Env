@@ -3,6 +3,9 @@
  # access_key = "AWS_ACCESSKEY"
  # secret_key = "AWS_SECRETCODE"
 #}
+aws = {
+    region  = "us-east-1"
+  }
 
 
 locals {
@@ -388,8 +391,3 @@ resource "aws_elastic_beanstalk_environment" "staging-rbd-metadata-ingest" {
 
 }
 
-provider "aws" {
- region = "us-east-1"
- access_key = "AWS_ACCESSKEY"
- secret_key = "AWS_SECRETCODE"
-}
