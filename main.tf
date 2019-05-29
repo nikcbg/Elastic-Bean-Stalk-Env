@@ -50,7 +50,6 @@ locals {
 resource "aws_elastic_beanstalk_application" "staging-rbd-metadata-ingest" {
   name        = "${local.app_name}"
   description = "RBD Metadata Ingest"
-  region = "us-east-1"
 }
 
 
@@ -387,4 +386,10 @@ resource "aws_elastic_beanstalk_environment" "staging-rbd-metadata-ingest" {
 
   tags = "${local.common_tags}"
 
+}
+
+provider "aws" {
+ region = "us-east-1"
+ access_key = "AWS_ACCESSKEY"
+ secret_key = "AWS_SECRETCODE"
 }
