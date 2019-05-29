@@ -1,8 +1,8 @@
-provider "aws" {
-  region = "us-east-1"
-  access_key = "AWS_ACCESSKEY"
-  secret_key = "AWS_SECRETCODE"
-}
+#provider "aws" {
+ # region = "us-east-1"
+ # access_key = "AWS_ACCESSKEY"
+ # secret_key = "AWS_SECRETCODE"
+#}
 
 
 locals {
