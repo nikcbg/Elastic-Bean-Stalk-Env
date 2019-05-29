@@ -1,11 +1,13 @@
-provider "aws" {
- region = "us-east-1"
- access_key = "AWS_ACCESSKEY"
- secret_key = "AWS_SECRETCODE"
- skip_credentials_validation = true
-}
+#provider "aws" {
+# region = "us-east-1"
+# access_key = "AWS_ACCESSKEY"
+ #secret_key = "AWS_SECRETCODE"
+# skip_credentials_validation = true
+#}
 
- 
+ provider "aws" {
+    region     = "${var.region}"
+}
 
 
 locals {
