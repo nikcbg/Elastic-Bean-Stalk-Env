@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "us-east-1"
+}
+
 locals {
   app_name = "rbd-metadata-ingest"
   env_name = "staging"
