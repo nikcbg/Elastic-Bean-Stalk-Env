@@ -1,7 +1,7 @@
 provider "aws" {
   region = "us-east-1"
-  variable = "AWS_ACCESSKEY"
-  variable = "AWS_SECRETCODE"
+  AWS_ACCESSKEY = ""
+  AWS_SECRETCODE = ""
 }
 
 
