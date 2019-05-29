@@ -8,8 +8,7 @@
 locals {
   app_name = "rbd-metadata-ingest"
   env_name = "staging"
-  region = "us-east-1"
-
+  
   #reuse existing sg + vpc
   eb_subnet = "subnet-a7950aef" #UMG_DDS_STG_Private1
   eb_security_group = "sg-7b4e5105" #aws27-useast-stage-system_access
@@ -51,6 +50,7 @@ locals {
 resource "aws_elastic_beanstalk_application" "staging-rbd-metadata-ingest" {
   name        = "${local.app_name}"
   description = "RBD Metadata Ingest"
+  region = "us-east-1"
 }
 
 
