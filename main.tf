@@ -2,6 +2,9 @@ provider "aws" {
   region = "us-east-1"
 }
 
+variable "AWS_ACCESSKEY" {}
+variable "AWS_SECRETCODE" {}
+
 locals {
   app_name = "rbd-metadata-ingest"
   env_name = "staging"
